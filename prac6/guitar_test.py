@@ -1,4 +1,4 @@
-from prac6.guitar import guitar
+from guitar import Guitar
 
 CURRENT_YEAR = 2017
 
@@ -11,17 +11,17 @@ def run_tests():
     guitar = Guitar(name, year, cost)
     other = Guitar("Another Guitar", 2012, 1512.9)
 
-    print("{} get_age() - Expected {}. Got {}".format(guitar.name, 95,
-                                                      guitar.get_age()))
-    print("{} get_age() - Expected {}. Got {}".format(other.name, 5,
-                                                      other.get_age()))
+    print("{} get_age() - Expected {}. Got {}".format(guitar.name, 95,guitar.get_age()))
+
+    print("{} get_age() - Expected {}. Got {}".format(other.name, 5,other.get_age()))
+
     print()
-    print("{} is_vintage() - Expected {}. Got {}".format(guitar.name,
-                                                         True,
+    print("{} is_vintage() - Expected {}. Got {}".format(guitar.name,True,
                                                          guitar.is_vintage()))
-    print("{} is_vintage() - Expected {}. Got {}".format(other.name,
-                                                         False,
+
+    print("{} is_vintage() - Expected {}. Got {}".format(other.name,False,
                                                          other.is_vintage()))
+
 
 
 if __name__ == '__main__':

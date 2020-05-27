@@ -1,4 +1,4 @@
-from prac_06.guitar import Guitar
+from guitar import Guitar
 
 
 def main():
@@ -19,6 +19,7 @@ def main():
 
     if guitars:
         guitars.sort()
+
         print("These are my guitars:")
         for i, guitar in enumerate(guitars):
             vintage_string = ""

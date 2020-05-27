@@ -1,9 +1,10 @@
-from prac6.car import car
+from car import Car
 
 
 def main():
-    my_car = Car(180)
-    my_car.drive(30)
+    my_car = Car("limo",100)
+    my_car.add_fuel(20)
+    my_car.drive(100)
     print("fuel =", my_car.fuel)
     print("odo =", my_car.odometer)
     print(my_car)
